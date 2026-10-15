@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rajgir Durga Puja Pandals 2026</title>
+<style>
+:root{--pink:#f72585;--orange:#ff7b00;--purple:#7209b7;--gold:#ffd166;--ink:#24123a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff8f1;color:var(--ink)}
+nav{position:sticky;top:0;z-index:5;background:#3b0764;color:white;display:flex;justify-content:space-between;align-items:center;padding:14px 5%;gap:12px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.15rem}.brand span{color:#ffd166}nav a{color:white;text-decoration:none;margin-left:15px;font-weight:700;font-size:.93rem}
+.hero{min-height:440px;display:flex;align-items:center;padding:50px 7%;color:white;background:linear-gradient(90deg,rgba(39,0,55,.88),rgba(83,0,70,.36)),url('https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero-content{max-width:680px}.eyebrow{display:inline-block;background:#ffb703;color:#42104f;border-radius:30px;padding:8px 14px;font-weight:800;letter-spacing:.4px}
+h1{font-size:clamp(2.2rem,5vw,4.7rem);line-height:1.03;margin:18px 0}.hero p{font-size:1.1rem;line-height:1.7;max-width:590px}
+.btn{display:inline-block;border:0;border-radius:25px;padding:12px 18px;font-weight:800;text-decoration:none;cursor:pointer;background:linear-gradient(90deg,var(--pink),var(--orange));color:white}
+section{padding:45px 5%}.section-title{text-align:center;margin:0 0 10px;font-size:clamp(1.8rem,3vw,2.7rem);color:#6a0572}.sub{text-align:center;max-width:760px;margin:0 auto 28px;line-height:1.6;color:#694d69}
+.tools{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:22px auto 28px}.tools input,.tools select{padding:12px 15px;border:1px solid #e6c9e6;border-radius:12px;font-size:1rem;min-width:220px;background:white}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.card{background:white;border-radius:19px;overflow:hidden;box-shadow:0 8px 25px #4a0b4a15;border:1px solid #f4dff1;transition:.2s}.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px #4a0b4a24}
+.card img{width:100%;height:220px;object-fit:cover;background:#f9d5e5}.card-body{padding:18px}.tag{display:inline-block;font-size:.78rem;font-weight:800;color:#7b087c;background:#ffe3f4;padding:6px 9px;border-radius:20px}
+.card h3{margin:12px 0 8px;font-size:1.22rem}.card p{line-height:1.55;color:#6b526b;font-size:.95rem}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}.actions .btn{font-size:.85rem;padding:10px 13px}.mapbtn{background:#fff0c2;color:#6c3a00}
+.note{background:#fff0c2;border-left:5px solid #ff9f1c;padding:16px 18px;border-radius:10px;max-width:1000px;margin:0 auto 24px;line-height:1.6}
+footer{text-align:center;padding:28px;background:#3b0764;color:white;line-height:1.7}
+.modal{display:none;position:fixed;inset:0;background:#1b082bd9;z-index:10;padding:20px;overflow:auto;align-items:center;justify-content:center}.modal.show{display:flex}.modal-box{background:white;max-width:600px;width:100%;border-radius:20px;overflow:hidden}.modal-box img{width:100%;height:250px;object-fit:cover}.modal-content{padding:22px}.close{float:right;border:0;background:#ffe3f4;color:#6a0572;border-radius:50%;width:36px;height:36px;font-size:1.3rem;cursor:pointer}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{min-height:390px}}
+@media(max-width:600px){nav{position:static}.grid{grid-template-columns:1fr}.card img{height:230px}.hero{padding:42px 6%;min-height:420px}nav a{margin-left:8px}.tools input,.tools select{width:100%}}
+</style>
+</head>
+<body>
+<nav><div class="brand">🌺 Rajgir <span>Durga Utsav</span></div><div><a href="#home">Home</a><a href="#pandals">Pandals</a><a href="#about">About</a></div></nav>
+<header class="hero" id="home"><div class="hero-content"><span class="eyebrow">SHUBHO DURGA PUJA • RAJGIR, NALANDA</span><h1>Celebrate Maa Durga in Rajgir</h1><p>Explore festive pandal spots, colourful decorations, local routes and Puja inspiration. Find a place, open its details, and check the map before visiting.</p><a class="btn" href="#pandals">Explore Pandals ↓</a></div></header>
+<section id="pandals"><h2 class="section-title">✨ Rajgir Puja Pandal Guide ✨</h2><p class="sub">Browse 15 colourful cards. Details and map links are included for easy exploration.</p>
+<div class="note"><b>Important:</b> Only some Rajgir Puja locations are confirmed by published reports. Other cards are marked as local areas to check—not confirmed 2026 pandals. Photos are online illustrative images, not guaranteed photographs of that exact Rajgir location. Please verify this year's pandal with local organisers before visiting.</div>
+<div class="tools"><input id="search" type="search" placeholder="Search a place or area…"><select id="filter"><option value="all">All cards</option><option value="reported">Reported Puja location</option><option value="check">Area to verify</option></select></div>
+<div class="grid" id="grid"></div></section>
+<section id="about"><h2 class="section-title">About this guide</h2><p class="sub">A student website project made with HTML, CSS and JavaScript to showcase Durga Puja culture around Rajgir, Bihar. Use the map links for directions and confirm local arrangements before travelling.</p></section>
+<footer>🌺 Jai Maa Durga 🌺<br>Rajgir Durga Utsav Guide • Student Website Project</footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><img id="modalImg" alt="Puja image"><div class="modal-content"><button class="close" id="close" aria-label="Close">×</button><span class="tag" id="modalTag"></span><h2 id="modalTitle"></h2><p id="modalText"></p><p><b>Location:</b> <span id="modalLoc"></span></p><a class="btn" id="modalMap" target="_blank" rel="noopener">Open Google Maps ↗</a></div></div></div>
+<script>
+const places = [
+ {name:"Dhurwa Mor – Shri Devi Sthan",loc:"Dhurwa Mor, Rajgir, Nalanda, Bihar",status:"reported",desc:"A long-running local Durga Puja site. A 2024 report described a pandal inspired by the Vishwa Shanti Stupa. Confirm the 2026 design and timings locally.",img:"https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"},
+ {name:"Rajgir Main Market",loc:"Main Market, Rajgir, Nalanda, Bihar",status:"reported",desc:"A local market area where Puja celebrations and lighting have been reported in previous years. Check this year's committee and exact spot before visiting.",img:"https://images.unsplash.com/photo-1604608672516-7a6f9b1d9c90?auto=format&fit=crop&w=900&q=80"},
+ {name:"Rajgir Bus Stand Area",loc:"Rajgir Bus Stand, Bihar Sharif–Rajgir Road, Rajgir, Bihar",status:"check",desc:"A convenient landmark to search for nearby seasonal celebrations. This card is an area guide, not confirmation that a 2026 pandal is present here.",img:"https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=80"},
+ {name:"Kalibari More",loc:"Kalibari More, Rajgir, Nalanda, Bihar",status:"check",desc:"Use this map link to explore the area and ask locally whether a Durga Puja pandal is operating this year.",img:"https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=900&q=80"},
+ {name:"Block More",loc:"Block More, Rajgir, Nalanda, Bihar",status:"check",desc:"A Rajgir landmark included as a place to check for local Puja arrangements. Confirm the exact location with residents or organisers.",img:"https://images.unsplash.com/photo-1602524817425-9a1e2a2a9c10?auto=format&fit=crop&w=900&q=80"},
+ {name:"Bangalipara",loc:"Bangalipara, Rajgir, Nalanda, Bihar",status:"check",desc:"Explore the locality and check for a nearby Puja committee. The image is illustrative and is not a verified photo of this area.",img:"https://images.unsplash.com/photo-1604608672516-7a6f9b1d9c90?auto=format&fit=crop&w=900&q=80"},
+ {name:"Ganjpar",loc:"Ganjpar, Rajgir, Nalanda, Bihar",status:"check",desc:"A local area card for your Rajgir guide. Please verify whether a pandal is set up here in 2026.",img:"https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"},
+ {name:"Nai Pokhar",loc:"Nai Pokhar, Rajgir, Nalanda, Bihar",status:"check",desc:"Check the locality for seasonal Puja celebrations. No specific 2026 pandal is confirmed by this page.",img:"https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=900&q=80"},
+ {name:"Ledua Pool Area",loc:"Ledua Pool, Rajgir, Nalanda, Bihar",status:"check",desc:"A map-linked area to investigate for local Puja festivities. Ask locally for the current year's exact pandal site.",img:"https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=80"},
+ {name:"Marwari Basa",loc:"Marwari Basa, Rajgir, Nalanda, Bihar",status:"check",desc:"An area guide card for the project. Confirm the presence of a pandal and its opening hours before planning a visit.",img:"https://images.unsplash.com/photo-1602524817425-9a1e2a2a9c10?auto=format&fit=crop&w=900&q=80"},
+ {name:"Durga Mandir Bus Stand",loc:"Durga Mandir Bus Stand, Rajgir, Nalanda, Bihar",status:"check",desc:"A named Rajgir landmark from a local route list. This does not confirm a separate 2026 Puja pandal at the spot.",img:"https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=900&q=80"},
+ {name:"Pachrukhhiya Kuan",loc:"Pachrukhhiya Kuan, Rajgir, Nalanda, Bihar",status:"check",desc:"Use this card to search the area and verify local festivities with residents or the Puja committee.",img:"https://images.unsplash.com/photo-1578662996442-48f60103fc96?auto=format&fit=crop&w=900&q=80"},
+ {name:"JNV School Area",loc:"Jawahar Navodaya Vidyalaya area, Rajgir, Nalanda, Bihar",status:"check",desc:"A nearby area to verify for public Puja events. Please confirm access and the exact pandal address locally.",img:"https://images.unsplash.com/photo-1604608672516-7a6f9b1d9c90?auto=format&fit=crop&w=900&q=80"},
+ {name:"Kailash Ashram Area",loc:"Kailash Ashram, Rajgir, Nalanda, Bihar",status:"check",desc:"A landmark card for visitors exploring Rajgir. This is not a confirmed pandal listing; check local announcements first.",img:"https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=900&q=80"},
+ {name:"Vishwa Shanti Stupa – Theme Inspiration",loc:"Vishwa Shanti Stupa, Rajgir, Nalanda, Bihar",status:"check",desc:"A famous Rajgir landmark that inspired the design of a reported Dhurwa Mor pandal in 2024. This card is a theme reference, not a claim that a Puja pandal is located at the Stupa.",img:"https://images.unsplash.com/photo-1602524817425-9a1e2a2a9c10?auto=format&fit=crop&w=900&q=80"}
+];
+const grid=document.getElementById('grid');
+function render(){
+ const q=document.getElementById('search').value.toLowerCase();
+ const f=document.getElementById('filter').value;
+ const list=places.filter(p=>(p.name+" "+p.loc+" "+p.desc).toLowerCase().includes(q)&&(f==="all"||p.status===f));
+ grid.innerHTML=list.map((p,i)=>`<article class="card"><img loading="lazy" src="${p.img}" alt="Illustrative festive Puja image for ${p.name}" onerror="this.onerror=null;this.src='https://placehold.co/900x550/7209b7/ffffff?text=Durga+Puja+Rajgir'"><div class="card-body"><span class="tag">${p.status==="reported"?"Previously reported Puja site":"Area to verify"}</span><h3>${p.name}</h3><p>📍 ${p.loc}</p><div class="actions"><button class="btn details" data-id="${places.indexOf(p)}">View Details</button><a class="btn mapbtn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.loc)}">Location ↗</a></div></div></article>`).join('');
+ if(!list.length)grid.innerHTML="<p>No matching place found. Try another search.</p>";
+ document.querySelectorAll('.details').forEach(b=>b.addEventListener('click',()=>showDetails(Number(b.dataset.id))));
+}
+function showDetails(i){const p=places[i];document.getElementById('modalImg').src=p.img;document.getElementById('modalTitle').textContent=p.name;document.getElementById('modalText').textContent=p.desc;document.getElementById('modalLoc').textContent=p.loc;document.getElementById('modalTag').textContent=p.status==="reported"?"Previously reported Puja site":"Area to verify locally";document.getElementById('modalMap').href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(p.loc);document.getElementById('modal').classList.add('show')}
+document.getElementById('close').addEventListener('click',()=>document.getElementById('modal').classList.remove('show'));
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==="modal")e.currentTarget.classList.remove('show')});
+document.getElementById('search').addEventListener('input',render);document.getElementById('filter').addEventListener('change',render);render();
+</script>
+</body></html>
